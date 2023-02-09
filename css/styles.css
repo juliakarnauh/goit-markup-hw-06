@@ -630,7 +630,6 @@ padding: 6px 23px;
 margin-right: 8px;
 transition:background-color var(--transition-dir), color var(--transition-dir), box-shadow var(--transition-dir) ;
 }
-
 .aside .button:hover,
 .aside .button:focus{
     background-color:var(--accent-color);
@@ -654,8 +653,7 @@ transition:background-color var(--transition-dir), color var(--transition-dir), 
     display: block;
     position: relative;
     width: 100%; 
- transition: box-shadow var(--transition-dir), opacity var(--transition-dir);
-
+ transition: box-shadow var(--transition-dir);
 }
 
 
@@ -687,7 +685,8 @@ transition:background-color var(--transition-dir), color var(--transition-dir), 
     display: block;
     position: relative;
     max-height: 294px;
-overflow: hidden;}
+overflow: hidden;
+}
 .kub .subtitle{
 font-weight: 700;
 font-size: 18px;
