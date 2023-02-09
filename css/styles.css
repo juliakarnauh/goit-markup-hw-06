@@ -192,7 +192,6 @@ letter-spacing: 0.06em;
 }
 .modal{
     position: relative;
-    min-height: 581px;
     width: 528px;
     padding: 40px;
     background-color: var(--occasional-color);
@@ -271,6 +270,10 @@ color: var(--primary-text-color);
     border: 1px solid rgba(33, 33, 33, 0.2);
     transition: var(--transition-dir);
   }
+  .modal-comment:focus{
+    border-color: var(--accent-color);
+  }
+
 
   .modal-form-checkbox {
     display: flex;
@@ -325,10 +328,14 @@ line-height: calc(30/16);
 width: 200px;
 min-height: 50px;
 margin-top: 30px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+transition:box-shadow var(--transition-dir);
+ }
+.modal-form-btn:hover,
+.modal-form-btn:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
-.box-work{
+.box{
     background-color: var(--occasional-color) ;
 }
 .visually-hidden{
@@ -726,6 +733,11 @@ color: var(--occasional-color);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 padding: 15px 16px;
+transition: border-color var(--transition-dir);
+}
+.footer-input:hover,
+.footer-input:focus{
+    border-color: var(--accent-color);
 }
 .footer-button{
     display: inline-block;
@@ -742,6 +754,10 @@ padding: 15px 16px;
     line-height: calc(30/16);
     letter-spacing: 0.06em;
     color: var(--occasional-color); 
+}
+.footer-button:hover,
+.footer-button:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .footer-btn-icon{
     display: flex;
